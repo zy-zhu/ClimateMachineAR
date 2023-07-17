@@ -9,6 +9,8 @@
         <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
         <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+        <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    
 
         <link rel="stylesheet" href="./styles.css">
     </head>
@@ -40,33 +42,9 @@
                        <div id="arscene1">  
 
                         
-                            <a-scene
-                            vr-mode-ui="enabled: false;"
-    renderer="logarithmicDepthBuffer: true;"
-    embedded
-    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
-    <a-nft
-    type="nft"
-    url="assets/marker01"
-    smooth="true"
-    smoothCount="10"
-    smoothTolerance=".01"
-    smoothThreshold="5"
-  >
+                            <a-scene  vr-mode-ui="enabled: false"
+                            arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;">
 
-<a-box choose1 name='ans1' id='Box1' depth="0.2" height="0.2" width="0.2"
-                                    position="0 1 -3" rotation="0 45 0"
-                                    color="#4CC3D9" ></a-box>
-
-                                    <a-entity
-                                    gltf-model="assets/avater01.glb"
-                                    scale="5 5 5"
-                                    position="50 150 0"
-                                  >
-                                </a-entity>
-</a-nft>
-
-<a-entity camera></a-entity>
                                 <a-box choose1 name='ans1' id='Box1' depth="0.2" height="0.2" width="0.2"
                                     position="0 1 -3" rotation="0 45 0"
                                     color="#4CC3D9" ></a-box>
@@ -82,7 +60,9 @@
                                 <a-plane position="0 0 -4" rotation="-90 0 0"
                                     width="3" height="3" color="#7BC8A4"></a-plane>
                                 <a-sky color="#ECECEC"></a-sky>
-                                <a-camera><a-cursor></a-cursor></a-camera>
+                                <!-- <a-camera><a-cursor></a-cursor></a-camera> -->
+
+                                <a-camera  rotation-reader> </a-camera>
                                 <p id="result01"></p>
                             </a-scene>
                         </div>

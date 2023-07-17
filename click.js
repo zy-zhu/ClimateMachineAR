@@ -6,8 +6,6 @@ AFRAME.registerComponent('choose1', {
         var data = this.data;
         var el = this.el;  // <a-box>
         var defaultColor = el.getAttribute('material').color;
-        
-
         el.addEventListener('click', function () {
             console.log(el.id)
             el.setAttribute('color', data.color);
