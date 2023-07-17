@@ -42,8 +42,7 @@
                        <div id="arscene1">  
 
                         
-                            <a-scene  vr-mode-ui="enabled: false"
-                            arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;">
+                            <a-scene  vr-mode-ui="enabled: false">
 
                                 <a-box choose1 name='ans1' id='Box1' depth="0.2" height="0.2" width="0.2"
                                     position="0 1 -3" rotation="0 45 0"
@@ -59,8 +58,6 @@
                                     color="#4CC3D9"></a-box>
                                 <!-- <a-plane position="0 0 -4" rotation="-90 0 0"
                                     width="3" height="3" color="#7BC8A4"></a-plane> -->
-                                <!-- <a-camera></a-camera> -->
-
                                 <a-camera  rotation-reader> <a-cursor color="red"></a-cursor></a-camera>
                                 <p id="result01"></p>
                             </a-scene>
@@ -107,8 +104,8 @@
 
                                     <a-entity id="rig">
                                         <a-entity camera position="0 2 0" look-controls wasd-controls>
-                                            <a-cursor id="cursor" raycaster fuse="true" fusetimeout="1000" opacity="0">
-                                                <a-image src="assets/scene01/avater.png" height="0.16" width="0.1"></a-image>
+                                            <a-cursor id="cursor" raycaster fuse="true" fusetimeout="1000" opacity="0.5">
+                                                <a-image src="assets/scene01/avater.png" height="0.08" width="0.05"></a-image>
                                             </a-cursor>
                                         </a-entity>
                                     </a-entity>
