@@ -58,6 +58,11 @@
 
 }
 
+#menu{
+    display:none;
+}
+
+
 #scene01{
     display: none;
 
@@ -74,15 +79,19 @@
 
 #arscene1{
     display: none;
+    pointer-events:none;
 }
 #arscene2{
     display: none;
+    pointer-events:none;
 }
 #arscene3{
     display: none;
+    pointer-events:none;
 }
 #arscene4{
     display: none;
+    pointer-events:none;
 }
 
 

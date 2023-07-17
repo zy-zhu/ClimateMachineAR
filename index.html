@@ -30,13 +30,23 @@
                     <div class="inputBox">
                         <input type="text" id="number" placeholder="Enter your wrist number..." />
                     </div>
-                    <div class="btn-box">
+                    <div>
                         <button class='btn' type="button" id="next0" onclick="ClickNext0()">Enter AR</button>
                             <p id="alarm"></p>
                     </div>
                 </div>
              </div>
                 <div>
+
+<div id="menu">
+
+    <button>Energy Consumption</button><br/>
+    <button>Material Recycling </button><br/>
+    <button>3</button><br/>
+    <button>4</button><br/>
+
+    </div>
+
 
 <!-- Here is AR Scene 01 -->
                        <div id="arscene1">  
@@ -56,8 +66,8 @@
                                 <a-box choose1 name='ans1' id='Box4' depth="0.2" height="0.2" width="0.2"
                                     position="-0.5 1 -3" rotation="0 45 0"
                                     color="#4CC3D9"></a-box>
-                                <!-- <a-plane position="0 0 -4" rotation="-90 0 0"
-                                    width="3" height="3" color="#7BC8A4"></a-plane> -->
+                                <a-plane position="0 0 -4" rotation="-90 0 0"
+                                    width="3" height="3" color="#7BC8A4"></a-plane>
                                 <a-camera  rotation-reader> <a-cursor color="red"></a-cursor></a-camera>
                                 <p id="result01"></p>
                             </a-scene>
@@ -102,14 +112,14 @@
                                     position="0.5 1 -3" rotation="0 45 0"
                                     color="red"></a-box> -->
 
-                                    <a-entity id="rig">
+                                    <!-- <a-entity id="rig">
                                         <a-entity camera position="0 2 0" look-controls wasd-controls>
                                             <a-cursor id="cursor" raycaster fuse="true" fusetimeout="1000" opacity="0.5">
                                                 <a-image src="assets/scene01/avater.png" height="0.08" width="0.05"></a-image>
                                             </a-cursor>
                                         </a-entity>
                                     </a-entity>
-                             
+                              -->
                                 <!-- <a-camera><a-cursor></a-cursor></a-camera> -->
                          
                             </a-scene>
@@ -133,7 +143,7 @@
                                 <a-plane position="0 0 -4" rotation="-90 0 0"
                                     width="3" height="3" color="#7BC8A4"></a-plane>
                                 <a-sky color="#ECECEC"></a-sky>
-                                <a-camera><a-cursor></a-cursor></a-camera>
+                                <!-- <a-camera><a-cursor></a-cursor></a-camera> -->
                             </a-scene>
                         </div>
 
