@@ -25,6 +25,28 @@ AFRAME.registerComponent('choose1', {
 });
 
 
+
+AFRAME.registerComponent('clickhandler', {
+    schema: {
+      txt: {default:'default'},
+    },        
+    init: function () {
+      var data = this.data;
+      var el = this.el;      
+      var defaultColor = el.getAttribute('material').color;
+  
+      el.addEventListener('click', function () {            
+       console.log(data.txt);
+      });        
+      el.addEventListener('mouseenter', function () {
+        console.log('mousein')
+    });
+    }
+  });
+
+
+
+
 AFRAME.registerComponent('choose2', {
     schema: {
         color: { default: 'blue' }
@@ -48,6 +70,27 @@ AFRAME.registerComponent('choose2', {
         });
     }
 });
+
+
+//click function
+
+AFRAME.registerComponent('color-toggle',{
+    init: function(){
+        let el=this.el;
+        this.toggleColor=function(){
+            // el.setAttribute('color','blue');
+            alert('clicked');
+            
+        }
+        this.el.addEventListener('click',this.toggleColor);
+        console.log('you can use your mouse to click')
+    },
+    remove: function(){
+        this.el.removeEventListener('click',this.toggleColor);
+    }
+})
+
+
 
 // arscene 
 function ClickNext0() {
