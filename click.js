@@ -96,13 +96,14 @@ AFRAME.registerComponent('color-toggle',{
 function ClickNext0() {
     var numberfill = document.getElementById('number')
     if (numberfill.value != '') {
-        // document.getElementById('scene01').style.display = "flex";
-        // document.getElementById('menu').style.display = 'flex';
+
         document.getElementById('scene0').style.display = 'none';
-        document.getElementById('arscene2').style.display='flex';
+        document.getElementById('scene01').style.display='flex';
         console.log('ok to go')
     }
-    else { console.log('fill me in') 
+    else { 
+        
+        console.log('fill me in') 
     document.getElementById("alarm").innerHTML='you can find the number on the wrist'
 }
 }
