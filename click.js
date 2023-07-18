@@ -99,7 +99,7 @@ function ClickNext0() {
         // document.getElementById('scene01').style.display = "flex";
         // document.getElementById('menu').style.display = 'flex';
         document.getElementById('scene0').style.display = 'none';
-        document.getElementById('arscene1').style.display='flex';
+        document.getElementById('arscene2').style.display='flex';
         console.log('ok to go')
     }
     else { console.log('fill me in') 

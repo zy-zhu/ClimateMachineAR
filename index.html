@@ -81,6 +81,7 @@
                             <a-scene vr-mode-ui="enabled: false"
                             arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
                             cursor="rayOrigin:mouse">
+<!--                             
                             <a-assets>
                                 <a-asset-item id="guide1" src="assets/avater01.glb"></a-asset-item>
                                 <a-asset-item id="option1" src="assets/scene01/s1o1.glb"></a-asset-item>
@@ -90,13 +91,12 @@
                               </a-assets>
                                 
                               <a-entity gltf-model="#guide1" animation-mixer scale="0.05 0.05 0.05" position="0.3 1.9 -1" ></a-entity>
-
                               <a-entity gltf-model="#option1" animation-mixer scale="0.05 0.05 0.05" position="0 1.5 -2.5"></a-entity>
                               <a-entity gltf-model="#option2" animation-mixer scale="0.2 0.2 0.2" position="-1 1 -3"></a-entity>
                               <a-entity gltf-model="#option3" animation-mixer></a-entity>
-                              <a-entity gltf-model="#option4" animation-mixer></a-entity>
+                              <a-entity gltf-model="#option4" animation-mixer></a-entity> -->
 
-                            <!-- <a-box clickhandler="txt:Option01" type='radio' name='ans1' value='Box1' depth="0.5" height="0.5" width="0.5"
+                            <a-box clickhandler="txt:Option01" type='radio' name='ans1' value='Box1' depth="0.5" height="0.5" width="0.5"
                                     position="-1 1 -3" rotation="0 45 0"
                                     color="red" color-toggle>
                                 </a-box>
@@ -109,17 +109,17 @@
                                     color="red"></a-box>
                                 <a-box clickhandler="txt:Option4" name='ans1' value='Box4' depth="0.2" height="0.2" width="0.2"
                                     position="0.5 1 -3" rotation="0 45 0"
-                                    color="red"></a-box> -->
+                                    color="red"></a-box>
 
-                                    <!-- <a-entity id="rig">
+                                    <a-entity id="rig">
                                         <a-entity camera position="0 2 0" look-controls wasd-controls>
                                             <a-cursor id="cursor" raycaster fuse="true" fusetimeout="1000" opacity="0.5">
                                                 <a-image src="assets/scene01/avater.png" height="0.08" width="0.05"></a-image>
                                             </a-cursor>
                                         </a-entity>
                                     </a-entity>
-                              -->
-                                <!-- <a-camera><a-cursor></a-cursor></a-camera> -->
+                             
+                                <a-camera><a-cursor></a-cursor></a-camera>
                          
                             </a-scene>
                         </div>
